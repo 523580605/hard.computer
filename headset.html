@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headset Gamer Logitech</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/Hard Computer.png" type="image x-icon">
+</head>
+<body>
+    
+    <nav>
+        <div class="container clearfix">
+            <h1><a href="index.html">
+                <img src="img/Hard Computer.png" alt="Logotipo">
+            </a>
+        </h1>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="produtos.html">PRODUTOS</a></li>
+            <li><a href="servicos.html">SERVIÇOS</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container clearfix">
+            <h1 align="center" class="title">Headset Gamer Logitech G733</h1>
+            <h2 align="center" class="title">R$1199,90</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="container clearfix">
+            <div class="col-6" id="col-1">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="img/headser.jpg" style="width:100%">
+                      <div class="text">imagem 1</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="img/headset 1.jpg" style="width:100%">
+                      <div class="text">imagem 2</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="img/headset.jpg" style="width:100%">
+                      <div class="text">imagem 3</div>
+                    </div>
+                  
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                <br><br><br><br>
+                <a href="indisponivel.html"><input type="button" value="Comprar" class="comprar"></a>
+            </div>
+            <div class="col-6" id="col-2">
+                <p>Descrição: Conheça o G733, um headset para jogos desenvolvido para se adequar ao seu estilo. Adote a tecnologia totalmente sem fio LIGHTSPEED de 2,4 GHz, com alcance de até 20 m e até 29 horas de autonomia de bateria. Personalize a aparência e o som em tempo real através do software Logitech G HUB com os filtros de voz Blue VO!CE e iluminação RGB LIGHTSYNC frontal de zona dupla. O G733 possui tecnologias avançadas de áudio, incluindo drivers de áudio PRO-G de 40 mm, câmaras acústicas internas e tecnologia DTS Headphone:X 2.0.</p>
+                <br><br>
+                <li>Marca: LogiTech</li>
+                <li>Fabricante: LogiTech</li>
+                <li>Modelo: 981-000863</li>
+                <li>Resposta de frequência: 20 Hz - 20 kHz</li>
+                <li>Resposta de frequência do microfone: 100 Hz - 10 KHz</li>
+                <li>Tipo de Conexão: LIGHTSPEED sem fio via USB</li>
+                <li>Vida útil da bateria: Recarregável</li>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container clearfix">
+            <div class="col-4" id="coluna 1">
+                <h3>Sobre a Hard Computer</h3>
+                    <h4>
+                        A Hard Computer é uma empresa criada com o intuito de oferecer os melhores produtos no ramo de informática. Contamos com os melhores produtos do mercado e com os melhores preços. Também contamos com os melhores serviços de assistência técnica do mercado.
+                    </h4>
+
+            </div>
+            <div class="col-4" id="coluna 2">
+                <h3>Localização</h3>
+                <h4 class="center2">
+                    Rua XV de Novembro<br>
+                    1085, Centro, Videira - SC<br>
+                </h4>
+            </div>
+            <div class="col-4" id="coluna 3">
+                <h3>Horário de Atendimento</h3>
+                <h4 class="center2">
+                    Segunda a sexta: 9h às 16h.<br>
+                    Sábados: 9h às 11h30.<br>
+                    Domingos e feriados: fechado.
+                </h4>
+            </div>
+        </div>
+
+        <div class="container clearfix center">
+            <p>Todos os direitos reservados.</p>
+            <p>Hard Computer - 2022</p>
+        </div>
+    </footer>
+</body>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</html>
